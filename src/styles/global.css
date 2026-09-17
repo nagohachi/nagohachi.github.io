@@ -184,6 +184,56 @@ ul.plain li:last-child {
   color: var(--muted);
 }
 
+.projects {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.project {
+  margin-bottom: 0.7rem;
+  padding: 0.95rem 1.15rem;
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  background: var(--card);
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.project:hover {
+  background: var(--accent-bg);
+}
+
+.project-name {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-weight: 600;
+}
+
+.project-desc {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin: 0.4rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.project-tags li {
+  font-size: 0.82rem;
+  padding: 0.1rem 0.6rem;
+  border-radius: var(--radius-sm);
+  background: var(--accent-bg);
+  color: var(--muted);
+}
+
+.project:hover .project-tags li {
+  background: var(--card);
+}
+
 footer {
   margin-top: 5rem;
   padding-top: 1.25rem;
@@ -200,6 +250,10 @@ footer {
   .pub {
     grid-template-columns: 1fr;
     gap: 0.2rem;
+    padding: 0.85rem 0.95rem;
+  }
+
+  .project {
     padding: 0.85rem 0.95rem;
   }
 

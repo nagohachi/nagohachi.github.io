@@ -1,0 +1,20 @@
+[
+  {
+    "name": "glide",
+    "url": "https://github.com/nagohachi/glide",
+    "description": "TRL-based post-training library for LLMs, Speech LLMs, and Vision LLMs. Supports SFT and RL (GRPO, GSPO), autoregressive-decoding evaluation (WER / CER / BLEU / ROUGE), composable YAML configs, and plugins for custom encoders, projectors, rewards, and metrics.",
+    "tags": ["Python", "PyTorch", "TRL"]
+  },
+  {
+    "name": "asr_with_llm",
+    "url": "https://github.com/nagohachi/asr_with_llm",
+    "description": "Implementation of SLAM-ASR (Ma et al., 2024), an LLM-based ASR model connecting a Whisper encoder to an LLM through a frame-downsampling MLP projector. Trained on the Corpus of Spontaneous Japanese (CSJ) with Whisper-small and Sarashina2.2-1B, achieving 6.44% CER on eval2.",
+    "tags": ["Python", "PyTorch", "Speech LLM"]
+  },
+  {
+    "name": "mightning",
+    "url": "https://github.com/nagohachi/mightning",
+    "description": "Minimal Lightning-like PyTorch wrapper for single-node multi-GPU training, built on pure DistributedDataParallel, with W&B logging, metric-based checkpointing, and 16-bit mixed precision.",
+    "tags": ["Python", "PyTorch", "DDP"]
+  }
+]

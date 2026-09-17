@@ -3,6 +3,7 @@ import Base from "../layouts/Base.astro";
 import { profile } from "../data/profile";
 import pubData from "../../cv/publications.json";
 import interests from "../../cv/interests.json";
+import projects from "../../cv/projects.json";
 
 const conference = pubData.conference as {
   authors: string[];
@@ -64,6 +65,21 @@ const year = new Date().getFullYear();
       ))
     }
   </ol>
+
+  <h2>Projects</h2>
+  <ul class="projects">
+    {
+      projects.map((p) => (
+        <li class="project">
+          <a class="project-name" href={p.url}>{p.name}</a>
+          <div class="project-desc">{p.description}</div>
+          <ul class="project-tags">
+            {p.tags.map((t) => <li>{t}</li>)}
+          </ul>
+        </li>
+      ))
+    }
+  </ul>
 
   <footer>
     <p>© {year} {profile.name}</p>
