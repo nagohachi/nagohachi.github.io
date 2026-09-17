@@ -24,7 +24,6 @@ jobs:
         with:
           bun-version: latest
 
-      # cv/cv.typ から public/Ryo_Magoshi_CV.pdf を生成するため
       - uses: typst-community/setup-typst@v4
         with:
           typst-version: latest

@@ -1,5 +1,4 @@
 {
-  // cv/cv.typ を保存したら public/Ryo_Magoshi_CV.pdf を直接更新する
   "tinymist.exportPdf": "onSave",
   "tinymist.outputPath": "$root/public/Ryo_Magoshi_CV",
   "tinymist.preview.refresh": "onType",

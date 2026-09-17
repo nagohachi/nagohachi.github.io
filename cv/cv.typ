@@ -1,11 +1,5 @@
-// Academic CV  —  build:  typst compile cv.typ   /   typst watch cv.typ
-// 日本語を本文に書きたい場合も、下の font フォールバックでそのまま通ります。
-
-// ===========================================================================
-//  設定
-// ===========================================================================
 #let full-name = "Ryo Magoshi"
-#let my-family-name = "Magoshi" // 業績リストで自動的に太字にする姓
+#let my-family-name = "Magoshi"
 
 #set document(title: "CV — " + full-name, author: full-name)
 #set page(
@@ -17,21 +11,14 @@
   font: ("New Computer Modern", "Hiragino Mincho ProN"),
   size: 11pt,
   lang: "en",
-  // ATS が PDF からテキスト抽出するとき、行末のハイフネーションが
-  // 単語を分断してキーワード照合を壊すため無効化する
+  // 行末ハイフネーションは PDF のテキスト抽出で単語を分断する
   hyphenate: false,
 )
 #set par(justify: true, leading: 0.62em, spacing: 0.9em)
 
-// ===========================================================================
-//  スタイル定義
-// ===========================================================================
-
-// 大見出し: 太字の大文字
 #show heading.where(level: 1): it => block(above: 1.5em, below: 0.6em)[
   #text(size: 11pt, weight: "bold", upper(it.body))
 ]
-// 小見出し: イタリック
 #show heading.where(level: 2): it => block(above: 1.0em, below: 0.35em)[
   #text(size: 11pt, style: "italic", it.body)
 ]
@@ -41,17 +28,14 @@
 #set list(marker: [--], indent: 0em, body-indent: 0.55em, spacing: 0.55em)
 #set enum(indent: 0em, body-indent: 0.55em, spacing: 0.7em)
 
-// 見出しの下の本文を少し字下げするブロック
 #let sec(body) = pad(left: 1.2em, body)
 
-// 見出し行 + 右寄せ日付
 #let entry(title, date) = grid(
   columns: (1fr, auto),
   align: (left, right),
   strong(title), date,
 )
 
-// 著者リスト: 自分の姓を自動で太字に
 #let au(..names) = (
   names
     .pos()
@@ -61,7 +45,6 @@
     .join(", ")
 )
 
-// 業績 1 件: 中身はデータ。描画は publist が行う
 #let pub(authors, title, venue, year, url: none, note: none) = (
   authors: authors,
   title: title,
@@ -71,13 +54,10 @@
   note: note,
 )
 
-// 業績 1 件の描画
-// URL の行き先に応じた短いラベル（本文に生 URL を出さないため）
 #let url-label(u) = {
-  if u.contains("arxiv.org") { "arXiv" }
-  else if u.contains("isca-archive.org") { "ISCA Archive" }
-  else if u.ends-with(".pdf") { "PDF" }
-  else { "link" }
+  if u.contains("arxiv.org") { "arXiv" } else if u.contains("isca-archive.org") { "ISCA Archive" } else if u.ends-with(
+    ".pdf",
+  ) { "PDF" } else { "link" }
 }
 
 #let render-pub(p) = [
@@ -86,7 +66,6 @@
   #if p.url != none [ #link(p.url)[\[#url-label(p.url)\]] ]
 ]
 
-// 業績リスト: [J1] [C1] のようなラベル付き
 #let publist(prefix, items) = {
   set enum(numbering: n => [#text(weight: "regular")[\[#prefix#n\]]])
   for p in items {
@@ -94,8 +73,6 @@
   }
 }
 
-// 本文から業績を参照: #pubref("C", conf-papers, "Refining Pseudo-Audio") -> [C3]
-// タイトルの一部で引くので、論文を足して番号がずれても自動で追従する
 #let pubref(prefix, items, title-part) = {
   let i = items.position(p => p.title.contains(title-part))
   if i == none {
@@ -105,9 +82,7 @@
   }
 }
 
-// ===========================================================================
-//  業績データ (本文より前で定義: Work Experiences から #pubref で参照するため)
-// ===========================================================================
+// Work Experiences の #pubref より前で定義する必要がある
 #let interests = json("interests.json")
 
 #let conf-papers = (
@@ -123,15 +98,12 @@
     ))
 )
 
-// ===========================================================================
-//  ヘッダ
-// ===========================================================================
 #align(
   center,
 )[
   #text(size: 17pt, weight: "bold")[#upper(full-name)]
   #v(0.5em, weak: true)
-  Kyoto, Japan \
+  Yoshida Honmachi, Sakyo-ku, Kyoto, Japan \
   E-mail #raw("r.magoshi.ma54 [at] gmail.com") \
   #link("https://nagohachi.github.io/")[Homepage] #h(0.8em)
   #link("https://github.com/nagohachi")[GitHub] #h(0.8em)
@@ -139,12 +111,10 @@
 ]
 #v(0.8em)
 
-// One-paragraph summary: your field, headline achievements, and notable awards in
-// two or three sentences.
-
-// ===========================================================================
-//  本文
-// ===========================================================================
+Graduate student at Kyoto University focusing on multilingual ASR and LLM-based speech recognition.
+Currently completing an M.S. and starting the Ph.D. program in April 2027.
+First author of four papers at INTERSPEECH and IEEE SLT,
+one of which was nominated for the Best Student Paper Award at INTERSPEECH 2026.
 
 = Research Interests
 #sec[
