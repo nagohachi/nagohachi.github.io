@@ -7,7 +7,7 @@ export const profile = {
     "My research centers on multilingual speech recognition, " +
     "articulatory features, and SpeechLLM.",
   interests: [
-    "Speech Recognition: Multilingual and Zero-Shot ASR, Articulatory Features",
+    "Speech Recognition: Multilingual ASR, Articulatory Features",
     "Speech LLM: LLM-based ASR, Text-Only Domain Adaptation",
     "Spoken Dialogue: Cascaded or Full-duplex Dialogue Systems",
   ],
