@@ -111,7 +111,7 @@
 ]
 #v(0.8em)
 
-Graduate student at Kyoto University focusing on multilingual ASR and LLM-based speech recognition.
+Graduate student at Kyoto University focusing on multilingual ASR and speech LLMs.
 Currently completing an M.S. and starting the Ph.D. program in April 2027.
 First author of four papers at INTERSPEECH and IEEE SLT,
 one of which was nominated for the Best Student Paper Award at INTERSPEECH 2026.
