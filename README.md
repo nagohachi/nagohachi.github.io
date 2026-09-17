@@ -28,6 +28,7 @@ bun run sync:cv
 |---|---|
 | `public/cv.pdf` | `typst compile` した CV。`/cv.pdf` で配信される |
 | `src/data/publications.json` | 業績データ。CV とサイトで同じものを使う |
+| `src/data/interests.json` | 研究興味。CV とサイトで同じものを使う |
 
 `../cv` 以外に置いている場合は `CV_DIR=/path/to/cv bun run sync:cv`。
 
@@ -39,6 +40,7 @@ bun run sync:cv
 |---|---|
 | `src/data/profile.ts` | 名前・所属・bio・リンク・研究興味 |
 | `src/data/publications.json` | 業績（**直接編集しない**。`../cv/publications.json` が正） |
+| `src/data/interests.json` | 研究興味（**直接編集しない**。`../cv/interests.json` が正） |
 | `src/pages/index.astro` | トップページの構成 |
 | `src/styles/global.css` | 配色・タイポグラフィ |
 

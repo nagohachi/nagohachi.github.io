@@ -2,6 +2,7 @@
 import Base from "../layouts/Base.astro";
 import { profile } from "../data/profile";
 import pubData from "../data/publications.json";
+import interests from "../data/interests.json";
 
 const conference = pubData.conference as {
   authors: string[];
@@ -33,7 +34,7 @@ const year = new Date().getFullYear();
 
   <h2>Research Interests</h2>
   <ul class="plain">
-    {profile.interests.map((i) => <li>{i}</li>)}
+    {interests.map((i) => <li>{i}</li>)}
   </ul>
 
   <h2>Publications</h2>
