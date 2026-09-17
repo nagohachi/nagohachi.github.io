@@ -17,6 +17,9 @@
   font: ("New Computer Modern", "Hiragino Mincho ProN"),
   size: 11pt,
   lang: "en",
+  // ATS が PDF からテキスト抽出するとき、行末のハイフネーションが
+  // 単語を分断してキーワード照合を壊すため無効化する
+  hyphenate: false,
 )
 #set par(justify: true, leading: 0.62em, spacing: 0.9em)
 

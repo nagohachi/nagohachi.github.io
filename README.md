@@ -15,15 +15,15 @@ bun run preview  # ビルド結果を確認
 ## CV の更新
 
 CV の実体は `cv/cv.typ`（Typst）。`bun run dev` / `bun run build` の先頭で
-`public/cv.pdf` に自動でコンパイルされるので、手動の同期作業はない。
+`public/Ryo_Magoshi_CV.pdf` に自動でコンパイルされるので、手動の同期作業はない。
 
 ```sh
 bun run build:cv   # PDF だけ作り直したいとき
 ```
 
-`public/cv.pdf` は生成物なので git 管理外。CI でも同じコマンドで作られる。
+`public/Ryo_Magoshi_CV.pdf` は生成物なので git 管理外。CI でも同じコマンドで作られる。
 
-VS Code で `cv/cv.typ` を保存すると tinymist が `public/cv.pdf` を直接更新する
+VS Code で `cv/cv.typ` を保存すると tinymist が `public/Ryo_Magoshi_CV.pdf` を直接更新する
 （`.vscode/settings.json` の `tinymist.outputPath` 設定による）。
 
 ## 編集する場所

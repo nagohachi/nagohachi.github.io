@@ -6,7 +6,7 @@
     "node": ">=22.12.0"
   },
   "scripts": {
-    "build:cv": "typst compile cv/cv.typ public/cv.pdf",
+    "build:cv": "typst compile cv/cv.typ public/Ryo_Magoshi_CV.pdf",
     "dev": "bun run build:cv && astro dev",
     "build": "bun run build:cv && astro build",
     "preview": "astro preview",

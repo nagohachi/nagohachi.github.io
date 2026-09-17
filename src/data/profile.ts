@@ -9,7 +9,7 @@ export const profile = {
   links: {
     github: "https://github.com/nagohachi",
     scholar: "https://scholar.google.co.jp/citations?user=hP617uUAAAAJ",
-    cv: "/cv.pdf",
+    cv: "/Ryo_Magoshi_CV.pdf",
   },
   familyName: "Magoshi",
 } as const;

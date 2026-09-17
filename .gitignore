@@ -24,4 +24,4 @@ pnpm-debug.log*
 .idea/
 
 # cv/cv.typ から生成される
-public/cv.pdf
+public/Ryo_Magoshi_CV.pdf
