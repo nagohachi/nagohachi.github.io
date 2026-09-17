@@ -1,0 +1,71 @@
+---
+import Base from "../layouts/Base.astro";
+import { profile } from "../data/profile";
+import pubData from "../data/publications.json";
+
+const conference = pubData.conference as {
+  authors: string[];
+  title: string;
+  venue: string;
+  year: string;
+  note?: string;
+  url?: string;
+}[];
+
+const year = new Date().getFullYear();
+---
+
+<Base title={`${profile.name}`} description={profile.bio}>
+  <header>
+    <h1>{profile.name}</h1>
+    <p class="sub">{profile.affiliation}</p>
+    <p class="sub">{profile.lab}</p>
+
+    <ul class="links">
+      <li><a class="primary" href={profile.links.cv}>CV (PDF)</a></li>
+      <li><a href={profile.links.scholar}>Google Scholar</a></li>
+      <li><a href={profile.links.github}>GitHub</a></li>
+      <li><a href={`mailto:${profile.email}`}>Email</a></li>
+    </ul>
+  </header>
+
+  <h2>About</h2>
+  <p>{profile.bio}</p>
+
+  <h2>Research Interests</h2>
+  <ul class="plain">
+    {profile.interests.map((i) => <li>{i}</li>)}
+  </ul>
+
+  <h2>Publications</h2>
+  <ol class="pubs">
+    {
+      conference.map((p, idx) => (
+        <li class="pub">
+          <span class="pub-id">[C{idx + 1}]</span>
+          <div>
+            <div class="pub-title">
+              {p.url ? <a href={p.url}>{p.title}</a> : p.title}
+            </div>
+            <div class="pub-authors">
+              {p.authors.map((a, i) => (
+                <>
+                  {i > 0 && ", "}
+                  <span class={a.includes(profile.familyName) ? "me" : ""}>{a}</span>
+                </>
+              ))}
+            </div>
+            <div class="pub-venue">
+              {p.venue}, {p.year}
+            </div>
+            {p.note && <span class="pub-note">{p.note}</span>}
+          </div>
+        </li>
+      ))
+    }
+  </ol>
+
+  <footer>
+    <p>© {year} {profile.name}</p>
+  </footer>
+</Base>

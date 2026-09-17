@@ -1,0 +1,46 @@
+{
+  "conference": [
+    {
+      "authors": ["Ryo Magoshi", "Shinsuke Sakai", "Tatsuya Kawahara"],
+      "title": "Phoneme-Guided Initialization for LLM-based Speech Recognition",
+      "venue": "Proc. IEEE Spoken Language Technology Workshop (SLT)",
+      "year": "2026",
+      "note": "To appear"
+    },
+    {
+      "authors": ["Ryo Magoshi", "Jaeyoung Lee", "Shinsuke Sakai", "Tatsuya Kawahara"],
+      "title": "Improving Zero-Shot Phonetic Classification through Language-Agnostic Articulatory Features",
+      "venue": "Proc. INTERSPEECH",
+      "year": "2026",
+      "note": "To appear; nominated for Best Student Paper Award",
+      "url": "https://arxiv.org/abs/2607.23606"
+    },
+    {
+      "authors": ["Ryo Magoshi", "Takashi Maekaku", "Yusuke Shinohara"],
+      "title": "Refining Pseudo-Audio Prompts with Speech-Text Alignment for Text-Only Domain Adaptation in LLM-Based ASR",
+      "venue": "Proc. INTERSPEECH",
+      "year": "2026",
+      "note": "To appear",
+      "url": "https://arxiv.org/abs/2605.14340"
+    },
+    {
+      "authors": ["Jaeyoung Lee", "Masato Mimura", "Ryo Magoshi", "Tatsuya Kawahara"],
+      "title": "LLM-as-Joiner: Decoupling Alignment from Language Modeling in Label-synchronous ASR",
+      "venue": "Proc. INTERSPEECH",
+      "year": "2026",
+      "note": "To appear"
+    },
+    {
+      "authors": ["Masato Mimura", "Jaeyoung Lee", "Ryo Magoshi", "Tatsuya Kawahara"],
+      "title": "Mixtures of Lightweight Articulatory Experts for Multilingual ASR",
+      "venue": "Proc. IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)",
+      "year": "2026"
+    },
+    {
+      "authors": ["Ryo Magoshi", "Shinsuke Sakai", "Jaeyoung Lee", "Tatsuya Kawahara"],
+      "title": "Multi-lingual and Zero-Shot Speech Recognition by Incorporating Classification of Language-Independent Articulatory Features",
+      "venue": "Proc. INTERSPEECH",
+      "year": "2025"
+    }
+  ]
+}
