@@ -18,6 +18,9 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
     <title>{title}</title>
     {description && <meta name="description" content={description} />}
     <link rel="canonical" href={canonical} />
+    <!-- HTML ページは SVG を優先（テーマ追従）。ico は /cv.pdf のような
+         非 HTML ルートのフォールバックとして必要。 -->
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <meta property="og:title" content={title} />
     {description && <meta property="og:description" content={description} />}

@@ -19,10 +19,9 @@ const year = new Date().getFullYear();
   <header>
     <h1>{profile.name}</h1>
     <p class="sub">{profile.affiliation}</p>
-    <p class="sub">{profile.lab}</p>
 
     <ul class="links">
-      <li><a class="primary" href={profile.links.cv}>CV (PDF)</a></li>
+      <li><a href={profile.links.cv}>CV (PDF)</a></li>
       <li><a href={profile.links.scholar}>Google Scholar</a></li>
       <li><a href={profile.links.github}>GitHub</a></li>
       <li><a href={`mailto:${profile.email}`}>Email</a></li>

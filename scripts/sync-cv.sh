@@ -1,8 +1,4 @@
 #!/usr/bin/env bash
-# CV リポジトリ (../cv) をビルドし、PDF と業績データをこのリポジトリへ取り込む。
-#
-# 取り込んだ public/cv.pdf と src/data/publications.json は「コミットする」こと。
-# CI (GitHub Actions) には ../cv が存在しないため、リポジトリ内に実体が必要。
 set -euo pipefail
 
 CV_DIR="${CV_DIR:-$(cd "$(dirname "$0")/../../cv" && pwd)}"
