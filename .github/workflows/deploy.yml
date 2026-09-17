@@ -24,6 +24,11 @@ jobs:
         with:
           bun-version: latest
 
+      # cv/cv.typ から public/cv.pdf を生成するため
+      - uses: typst-community/setup-typst@v4
+        with:
+          typst-version: latest
+
       - run: bun install --frozen-lockfile
 
       - run: bun run build

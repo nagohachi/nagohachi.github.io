@@ -1,0 +1,9 @@
+{
+  // cv/cv.typ を保存したら public/cv.pdf を直接更新する
+  "tinymist.exportPdf": "onSave",
+  "tinymist.outputPath": "$root/public/$name",
+  "tinymist.preview.refresh": "onType",
+  "[typst]": {
+    "editor.defaultFormatter": "myriad-dreamin.tinymist"
+  }
+}
