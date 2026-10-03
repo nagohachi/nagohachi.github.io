@@ -8,8 +8,7 @@
       ],
       "title": "Phoneme-Guided Initialization for LLM-based Speech Recognition",
       "venue": "Proc. IEEE Spoken Language Technology Workshop (SLT)",
-      "year": "2026",
-      "note": "To appear"
+      "year": "2026"
     },
     {
       "authors": [
@@ -21,8 +20,8 @@
       "title": "Improving Zero-Shot Phonetic Classification through Language-Agnostic Articulatory Features",
       "venue": "Proc. INTERSPEECH",
       "year": "2026",
-      "note": "To appear; nominated for Best Student Paper Award",
-      "url": "https://arxiv.org/abs/2607.23606"
+      "note": "Nominated for Best Student Paper Award",
+      "url": "https://www.isca-archive.org/interspeech_2026/magoshi26b_interspeech.html"
     },
     {
       "authors": [
@@ -34,7 +33,7 @@
       "venue": "Proc. INTERSPEECH",
       "year": "2026",
       "note": "To appear",
-      "url": "https://arxiv.org/abs/2605.14340"
+      "url": "https://www.isca-archive.org/interspeech_2026/magoshi26_interspeech.html"
     },
     {
       "authors": [
@@ -46,7 +45,7 @@
       "title": "LLM-as-Joiner: Decoupling Alignment from Language Modeling in Label-synchronous ASR",
       "venue": "Proc. INTERSPEECH",
       "year": "2026",
-      "note": "To appear"
+      "url": "https://www.isca-archive.org/interspeech_2026/lee26u_interspeech.html"
     },
     {
       "authors": [

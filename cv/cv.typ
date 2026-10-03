@@ -11,7 +11,6 @@
   font: ("New Computer Modern", "Hiragino Mincho ProN"),
   size: 11pt,
   lang: "en",
-  // 行末ハイフネーションは PDF のテキスト抽出で単語を分断する
   hyphenate: false,
 )
 #set par(justify: true, leading: 0.62em, spacing: 0.9em)
