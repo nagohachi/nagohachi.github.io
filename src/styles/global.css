@@ -7,6 +7,12 @@
   color: light-dark(#1a1a18, #e8e8e2);
 }
 
+@media (min-width: 768px) {
+  :root {
+    font-size: 18px;
+  }
+}
+
 .wrap {
   max-width: 46rem;
   margin: 0 auto;
