@@ -188,5 +188,5 @@ one of which was nominated for the Best Student Paper Award at INTERSPEECH 2026.
 = Technical Strengths
 #sec[
   - Languages: Python, C++, TypeScript
-  - Frameworks: PyTorch, ESPnet, NeMo, Fairseq, Django, React
+  - Frameworks: PyTorch, ESPnet, NeMo, Megatron-LM, NeMo-RL, ms-swift, Fairseq, Django, React
 ]
