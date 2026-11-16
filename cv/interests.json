@@ -1,5 +1,5 @@
 [
   "Speech Recognition: Multilinguality, Low-Resource and Zero-Shot Languages, Articulatory Features",
-  "Speech Foundation Models and Speech LLMs: LLM-based ASR, Text-Only Domain Adaptation",
+  "Post-Training of LLMs and Speech LLMs: Domain Adaptation, Reinforcement Learning (RLVR, Preference Optimization), Multilingual Capabilities",
   "Spoken Dialogue Systems: Cascaded or Full-duplex Dialogue Systems"
 ]
