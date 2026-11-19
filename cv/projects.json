@@ -6,10 +6,10 @@
     "tags": ["Python", "PyTorch", "TRL"]
   },
   {
-    "name": "asr_with_llm",
-    "url": "https://github.com/nagohachi/asr_with_llm",
-    "description": "Implementation of SLAM-ASR (Ma et al., 2024), an LLM-based ASR model connecting a Whisper encoder to an LLM through a frame-downsampling MLP projector. Trained on the Corpus of Spontaneous Japanese (CSJ) with Whisper-small and Sarashina2.2-1B, achieving 6.44% CER on eval2.",
-    "tags": ["Python", "PyTorch", "Speech LLM"]
+    "name": "Megatron-Speech",
+    "url": "https://github.com/nagohachi/Megatron-Speech",
+    "description": "Speech LLM training framework built on Megatron Core, with tensor parallelism and Hugging Face checkpoint conversion.",
+    "tags": ["Python", "PyTorch", "Megatron-LM"]
   },
   {
     "name": "mightning",
